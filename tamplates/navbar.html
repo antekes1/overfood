@@ -1,0 +1,14 @@
+{% load static %}
+
+{% load i18n %}
+
+<header class="header header--loggedIn">
+    <div class="container">
+      <a href="{% url 'home' %}" class="header__logo">
+<!--        <img src="{% static 'images/logo.svg' %}" />-->
+        <h1>Overfood</h1>
+      </a>
+
+      <a href="{% url 'eat_page' %}">Get started</a>
+    </div>
+  </header>

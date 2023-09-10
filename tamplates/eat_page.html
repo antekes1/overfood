@@ -1,0 +1,92 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+  <body>
+    <main class="layout layout--3">
+      <div class="container">
+        <!-- Topics Start -->
+        <div class="roomList">
+
+        <div class="roomList__header">
+            <div>
+              <h2>Meal finder: </h2>
+            </div>
+        </div>
+
+        </div>
+        <!-- Topics End -->
+
+
+        <!-- Room List Start -->
+        <div class="roomList">
+
+<!--            <div class="create-room layout">-->
+              <div class="container">
+                  <div class="layout__body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                          <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                                {% for field in form %}
+                                <div class="form-check">
+                                    {{ field }}
+                                </div>
+                                {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form__action">
+                            <button class="btn btn--main" name="submit">Submit</button>
+                          </div>
+                    </form>
+                </div>
+
+                <div>
+                  {% for recipe in recipes %}
+                    <div class="roomListRoom">
+                        <div class="roomListRoom__header">
+                        </div>
+                        <div class="roomListRoom__content">
+                          <a href="{% url 'recipe' recipe.id %}">{{ recipe.name }}</a>
+                        </div>
+                    </div>
+                  {% endfor %}
+                </div>
+
+        </div>
+        </div>
+        <!-- Room List End -->
+
+
+        <!-- Activities Start -->
+        <div>
+            <div>
+            <h3>
+                What is a meal finder ?
+            </h3>
+
+            <h5>
+                This is a program that searches for recipes from products available in your fridge.
+            </h5>
+            </div>
+
+            <div>
+                <h2>
+                    Haven't found any recipes? <a href="{% url 'create-recipe' %}">Add the recipe</a> and help others
+                </h2>
+
+            </div>
+
+        </div>
+        <!-- Activities End -->
+
+      </div>
+    </main>
+
+  </body>
+
+{% endblock %}
+

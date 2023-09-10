@@ -1,0 +1,38 @@
+
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+}
+
+.photo-gal {
+    width: 80px; /* Ustaw odpowiednią szerokość i wysokość dla miniatur */
+    height: 80px;
+    margin: 5px; /* Odstęp między miniaturami */
+}
+
+.BigBen {
+    max-width: 400px; /* Maksymalna szerokość zdjęcia */
+    height: auto; /* Automatyczna wysokość, aby zachować proporcje */
+    display: block; /* Usunięcie domyślnego marginesu dla inline-block */
+    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+}
+
+.products-checkbox {
+    max-height: 100px; /* Maksymalna wysokość pola */
+    overflow-y: auto; /* Dodaj pasek przewijania, jeśli pole jest za duże */
+}
+
+.scrollable-contentt {
+        max-height: 100px; /* Ustaw maksymalną wysokość pola */
+        overflow-y: auto; /* Ustaw styl przewijania */
+        border: 1px solid #ccc; /* Dodaj obramowanie lub inne style */
+        padding: 10px; /* Dodaj wypełnienie, jeśli jest to konieczne */
+    }
+
+.scrollable-contenttt {
+        max-height: 700px; /* Ustaw maksymalną wysokość pola */
+        overflow-y: auto; /* Ustaw styl przewijania */
+        padding: 10px; /* Dodaj wypełnienie, jeśli jest to konieczne */
+    }
