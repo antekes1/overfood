@@ -81,24 +81,24 @@ WSGI_APPLICATION = 'overfood.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'URL': 'postgresql://postgres:cNq1UYKlwTraljWWwSmf@containers-us-west-191.railway.app:7989/railway',
-#         'NAME': 'railway',
-#         'USER': 'postgres',
-#         'PASSWORD': 'cNq1UYKlwTraljWWwSmf',
-#         'HOST': 'containers-us-west-191.railway.app',
-#         'PORT': 7989,
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:0CLWC6Uh3qIsu9PLCGKN@containers-us-west-171.railway.app:7838/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '0CLWC6Uh3qIsu9PLCGKN',
+        'HOST': 'containers-us-west-171.railway.app',
+        'PORT': 7838,
+    }
+}
 
 
 # Password validation
