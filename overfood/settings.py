@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-c%e%d19*_et!-necrt8hj-z=1&wm$_ysw1&&fks2-wd8kb(5#x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['overfood-production.up.railway.app']
 
 
 # Application definition
