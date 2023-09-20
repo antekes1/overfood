@@ -1,6 +1,34 @@
 {% extends 'main.html' %}
 
 {% block content %}
-Hello
+
+<style>
+     body {
+
+        text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+        vertical-align: middle; /* Wyśrodkowanie tekstu w pionie */
+        background-size: cover; /* Dopasowanie tła do rozmiaru elementu */
+        background-repeat: no-repeat; /* Wyłącz powtarzanie tła */
+     }
+</style>
+
+<body>
+
+<div>
+    <h1>Welcome in overfood</h1>
+    <p>
+        It's a program that searches for recipes from products available in your fridge.
+    </p>
+
+    <p>
+        If you don't know what to cook, the program will help you.
+        You can use leftover food scraps to cook something delicious.
+    </p>
+
+    <a href="{% url 'eat_page' %}" class="btn btn--main">Start now!</a>
+</div>
+
+</body>
+
 {% endblock %}
 
