@@ -32,7 +32,7 @@
     }
 
 .scrollable-contenttt {
-        max-height: 600px; /* Ustaw maksymalną wysokość pola */
+        max-height: 400px; /* Ustaw maksymalną wysokość pola */
         overflow-y: auto; /* Ustaw styl przewijania */
         padding: 10px; /* Dodaj wypełnienie, jeśli jest to konieczne */
     }
