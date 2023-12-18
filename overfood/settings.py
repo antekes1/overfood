@@ -106,12 +106,12 @@ WSGI_APPLICATION = 'overfood.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgresql://postgres:0CLWC6Uh3qIsu9PLCGKN@containers-us-west-171.railway.app:7838/railway',
+        'URL': os.getenv("DATA_URL"),
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '0CLWC6Uh3qIsu9PLCGKN',
-        'HOST': 'containers-us-west-171.railway.app',
-        'PORT': 7838,
+        'PASSWORD':  os.getenv("DATA_PASSWORD"),
+        'HOST':  os.getenv("DATA_HOST"),
+        'PORT': os.getenv("DATA_PORT"),
     }
 }
 
